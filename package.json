@@ -1,0 +1,25 @@
+{
+  "name": "my_first_devops_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-place7/My_First_DevOps_Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/code-place7/My_First_DevOps_Project/issues"
+  },
+  "homepage": "https://github.com/code-place7/My_First_DevOps_Project#readme",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  }
+}
