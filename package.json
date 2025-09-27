@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format-check": "prettier --check ."
+    "format:check": "prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/code-place7/My_First_DevOps_Project#readme",
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
     "dotenv": "^17.2.2",
+    "drizzle-orm": "^0.44.5",
     "express": "^5.1.0"
   },
   "devDependencies": {
