@@ -4,6 +4,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import logger from './config/logger.js';
+import authRoutes from './routes/auth.route.js';
 
 const app = express();
 
@@ -18,6 +19,16 @@ app.use(
     stream: { write: message => logger.info(message.trim()) },
   })
 );
+
+app.use('/api/auth', authRoutes);
+
+app.get('/health', (req, res) => {
+  res.status(200).json({
+    status: 'OK',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+  });
+});
 
 app.get('/', (req, res) => {
   logger.info('Root endpoint was called, Hello from My API!');
