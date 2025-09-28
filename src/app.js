@@ -4,7 +4,6 @@ import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import logger from './config/logger.js';
-import cookieParser from 'cookie-parser';
 
 const app = express();
 
