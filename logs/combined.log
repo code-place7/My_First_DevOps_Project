@@ -1,3 +1,7 @@
 {"level":"info","message":"Root endpoint was called, Hello from My API!","service":"my-first-devops-api"}
 {"level":"info","message":"::1 - - [28/Sep/2025:15:56:55 +0000] \"GET / HTTP/1.1\" 200 19 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"my-first-devops-api"}
 {"level":"info","message":"::1 - - [28/Sep/2025:15:56:55 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"my-first-devops-api"}
+{"level":"info","message":"Root endpoint was called, Hello from My API!","service":"my-first-devops-api"}
+{"level":"info","message":"::1 - - [26/Nov/2025:13:27:45 +0000] \"GET / HTTP/1.1\" 200 19 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"my-first-devops-api"}
+{"level":"info","message":"::1 - - [26/Nov/2025:13:27:45 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"my-first-devops-api"}
+{"level":"info","message":"::1 - - [26/Nov/2025:14:14:34 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\"","service":"my-first-devops-api"}
