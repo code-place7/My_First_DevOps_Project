@@ -18,14 +18,18 @@ export const signup = async (req, res, next) => {
 
     const { name, email, password, role } = validationResult.data;
 
+    //create the user
     const user = await createUser({ name, email, password, role });
 
+    //then create their JWT token
     const token = jwttoken.sign({
       id: user.id,
       email: user.email,
       role: user.role,
     });
-
+    //and set the token in the cookies
+    //so that the user can access the protected routes
+    //and the token will be used to verify the user in the protected routes
     cookies.set(res, 'token', token);
 
     logger.info(`User registered successfully: ${email}`);
