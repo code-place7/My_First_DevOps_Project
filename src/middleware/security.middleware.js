@@ -1,5 +1,5 @@
-import aj from '#config/arcjet.js';
-import logger from '#config/logger.js';
+import aj from '../config/arcjet.js';
+import logger from '../config/logger.js';
 import { slidingWindow } from '@arcjet/node';
 
 // Middleware: apply security rules per request using Arcjet.
@@ -7,7 +7,7 @@ import { slidingWindow } from '@arcjet/node';
 // and applies a role-based sliding-window rate limit. It also
 // evaluates Arcjet's decision and responds appropriately for
 // bots, shielded requests, and rate-limit denials.
-const securityMiddleware = async (req, res, next) => {
+export const securityMiddleware = async (req, res, next) => {
   try {
     // Determine role from authenticated user; default to 'guest'.
     const role = req.user?.role || 'guest';
