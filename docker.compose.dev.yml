@@ -42,7 +42,8 @@ services:
     depends_on:
       neon-local:
         condition: service_healthy
-    networks: -my-first-devops-project-dev
+    networks:
+      - my-first-devops-project-dev
     restart: unless-stopped
 
 networks:
